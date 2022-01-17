@@ -1,4 +1,5 @@
 //Array Linear Search Problem
+//Find the element in a given array
 
 function search(arr, size, k){
     if(size === 0) 
