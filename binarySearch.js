@@ -9,14 +9,14 @@ function binarySearch(arr, low, high, key) {
 
     //element not found
     if(low > high) {
-        return false;
+        return -1;
     }
 
     let mid = low + (high-low)/2;
 
     //element found
     if(arr[mid] === key) {
-        return true
+        return mid //return the index of found element
     }
 
     if(arr[mid] < key) {
@@ -33,7 +33,7 @@ function main() {
     const key = 14;
 
     const ans = binarySearch(arr, 0, size, key);
-    console.log("Present or not: ", ans);
+    console.log("Element found in index:", ans);
 
     return 0;
 }
